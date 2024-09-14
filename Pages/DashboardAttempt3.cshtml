@@ -1,0 +1,40 @@
+@model dynamic
+
+<div class="font-['Space Mono'] min-h-screen grid grid-cols-3 text-2xl text-secondary p-4">
+
+    
+    <bp-counter>hi there!</bp-counter>  
+    
+    
+    @* $1$ Main side panel #1# *@
+    @* $1$ <div class="bg-primary w-72"> #1# *@
+    @* *@
+    @* <div class="text-sm bg-primary gap-2 flex flex-col"> *@
+    @*     <div class=""> *@
+    @*         <partial name="SampleLogoCard"></partial> *@
+    @*     </div> *@
+    @*     <div class="flex-end"> *@
+    @*         <partial name="SampleCommandOptions"></partial> *@
+    @*     </div> *@
+    @* </div> *@
+    @* *@
+    @* $1$ </div> #1# *@
+    @* *@
+    @* $1$ <div class="flex flex-row justify-center bg-accent items-center"> #1# *@
+    @* <div class="flex-1 overflow-scroll"> *@
+    @*     <partial name="SampleTable"></partial> *@
+    @* </div> *@
+    @* $1$ </div> #1# *@
+    @* *@
+    @* <div class="h-screen"> *@
+    @*     <partial name="DetailsPanel"/> *@
+    @* </div> *@
+
+
+</div>
+
+<style>
+*{
+    /*border: 1px cyan solid;*/
+}
+</style>

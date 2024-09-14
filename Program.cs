@@ -33,6 +33,9 @@ DotEnv.Load();
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddServerSideBlazor();
+
+
 builder.Services.AddTransient<IEmbeddedResourceQuery, EmbeddedResourceQuery>();
 builder.Services.AddTransient<ICarService, CarService>();
 builder.Services.AddTransient<ICommentService, MassEmailerService>();
@@ -51,7 +54,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseCors(policyName);
-app.UseStaticFiles();
+app.UseStaticFiles(); // DO NOT Remove if you're using Blazor SSR!  Explanation: https://www.youtube.com/watch?v=opS_2jIU3bQ
 
 app.UseRouting();
 

@@ -29,7 +29,7 @@
         <PackageReference Include="CodeMechanic.FileSystem" Version="1.0.4"/>
         <PackageReference Include="CodeMechanic.Neo4j.Extensions" Version="1.0.1"/>
         <PackageReference Include="CodeMechanic.Reflection" Version="1.0.3"/>
-        <PackageReference Include="CodeMechanic.Regex" Version="1.0.1"/>
+        <PackageReference Include="CodeMechanic.RegularExpressions" Version="1.0.1"/>
         <PackageReference Include="CodeMechanic.Shargs" Version="1.0.1"/>
         <PackageReference Include="CodeMechanic.Types" Version="1.0.6"/>
         <PackageReference Include="ElectronNET.API" Version="23.6.2-alpha-13"/>
@@ -38,6 +38,10 @@
         <PackageReference Include="Insight.Database" Version="6.3.11"/>
         <PackageReference Include="NSpecifications" Version="1.1.0"/>
         <PackageReference Include="RestSharp" Version="110.2.1-alpha.0.2"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Include="wwwroot\dist\bp-counter.js" />
     </ItemGroup>
 
 </Project> 
